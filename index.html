@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="dwImageProtector.js"></script>
+<script type="text/javascript">
+$(window).bind('load', function() {
+ $('img').protectImage();
+ });
+$(window).bind('resize', function() {
+ $('img').protectImage();
+});
+</script>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="donotcopypaste" onMouseDown="return false;" onSelectStart="return false;" onCopy="return false;" unselectable="on">
+  <h1>コピペ禁止スクリプト利用中</h1>
+  <p>現在コマンド(⌘)を押している？ : <span id="command-flag">false</span></p>
+  <div>
+  </div>
+</div>
+    コピー出来ていないことを確認するためのテキストフォーム
+    <input type="text">
+  <script src="./main.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
