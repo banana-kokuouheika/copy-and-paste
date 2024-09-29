@@ -1,7 +1,7 @@
 jQuery.fn.protectImage = function(settings) {
  $("img[name=blank]").remove();
  settings = jQuery.extend({
- image: 'blank.gif',
+ image: 'blank.png',
  zIndex: 10
  }, settings);
 return this.each(function() {
