@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://自分のURL/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.自分のURL/.*$ [NC]
+RewriteRule ^(.*)$ - [F]
